@@ -109,7 +109,65 @@ ul li ul.dropdown li a:hover{
     background-color: antiquewhite;
     border-radius: 50%;
 }
+/** BIOGRAPHY PAGE CSS **/
+/** Biography Image **/
+.biographyPic{
+    max-width: 50%;
+    max-height: 50%;;
+    border-radius: 50%;
+    margin: auto;
+    display: block;
+    float:left;
+    shape-outside: ellipse(50% 50%);
+    shape-image-threshold: 1;
+    shape-margin: 2%;
+}
 
+/** add padding around the img/container **/
+.container {
+    padding-top: 50px;
+    padding-bottom: 800px;
+}
+.container h2{
+    color:#FF5757;
+}
+
+/** button on biography page **/
+.clickMain{
+    
+  background-color: antiquewhite;
+  border: 2px solid #FF5757;
+  border-radius: 30px;
+  box-shadow: #FF5757 4px 4px 0 0;
+  color: #FF5757;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 5px 18px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.clickMain:hover {
+  background-color: #fff;
+}
+
+.clickMain:active {
+  box-shadow: #422800 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  .clickMain {
+    min-width: 120px;
+    padding: 0 25px;
+  }
+}
 
 /** Menu CSS **/
 
