@@ -1,12 +1,16 @@
+
+// adding variables and initializing
 var Form1 = document.getElementById('Form1');
 var Form2 = document.getElementById('Form2');
 var Form3 = document.getElementById('Form3');
 
+// for next and back buttons on form
 var Next1 = document.getElementById('Next1');
 var Next2 = document.getElementById('Next2');
 var Back1 = document.getElementById('Back1');
 var Back2 = document.getElementById('Back2');
 
+//for progress bar at top of form
 var progress= document.getElementById('progress');
 
 // Swipe animation between forms with next and back buttons
@@ -31,6 +35,7 @@ Back2.onclick= function(){
     progress.style.width="240px";
 }
 
+// order form adding total with quantity and price
 document.addEventListener("DOMContentLoaded", function () {
     var form = document.getElementById("orderForm");
     form.classList.add("show");
