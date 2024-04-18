@@ -1,10 +1,45 @@
-<html>
-    <head>
-        <title> ORDER FORM </title>
-        <link rel="stylesheet" href="../CSS/menuorder.css">
-    </head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> BINKORIA MENU </title>
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/menuorder.css">
+</head>
+<body>
+    <header> 
+        <img src="../IMAGES/binkorialogo2 copy.png">
+        <h2> ENJOY RICH FLAVORS!</h2>
+    </header>
+    <!-- Link to JavaScript -->
+    <script src="../JavaScript/menudisplay.js"> </script>
+
+<!---- NAV BAR ---->
+<nav class="navbar">
+    <ul>
+    <li> <a href="home.html" class="active">Home</a> </li>
+    <li> <a href="about.html">About</a> </li>
+    <li> <a href="biography.html">Biography</a> </li>
+  <!-- dropdown menu with selections for breakfast, lunch, and dinner menus-->
+    <li><a href="menupage.html"> Menu +</a> 
+            <ul class="dropdown"> 
+                <li> <a href="menupage.html#breakfast-menu"> Breakfast</a> </li>
+                <li> <a href="menupage.html#lunch-menu"> Lunch</a> </li>
+                <li> <a href="menupage.html#dinner-menu"> Dinner</a> </li>
+        </ul> 
+    </li>
+    <li> <a href="contactus.html" target="blank">Contact Us</a> </li>
+<!--call to action button for ordering-->
+    <div class="cta">
+    <li> <a href="order.html">Order Here!</a> </li>
+    </div>
+    </ul>
+</nav>
+        
     <body>
-        <div class="container">
+        <div class="container1">
             <form id="Form1">
                 <h3> Order Form </h3>
                 <input type="text" placeholder="First Name" required>
