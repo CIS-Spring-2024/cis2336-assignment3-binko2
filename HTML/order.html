@@ -1,55 +1,72 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title> BINKORIA MENU </title>
-    <!-- Link to CSS -->
-    <link rel="stylesheet" href="../CSS/style.css">
-</head>
-<body>
-    <header> 
-        <img src="../IMAGES/binkorialogo2 copy.png">
-        <h2> ENJOY RICH FLAVORS!</h2>
-    </header>
-    <!-- Link to JavaScript -->
-    <script src="../JavaScript/menudisplay.js"> </script>
+<html>
+    <head>
+        <title> ORDER FORM </title>
+        <link rel="stylesheet" href="../CSS/menuorder.css">
+    </head>
+    <body>
+        <div class="container">
+            <form id="Form1">
+                <h3> Order Form </h3>
+                <input type="text" placeholder="First Name" required>
+                <input type="text" placeholder="Last Name" required>
+                <input type="email" placeholder="Email" required>
 
-<!---- NAV BAR ---->
-<nav class="navbar">
-    <ul>
-    <li> <a href="home.html" class="active">Home</a> </li>
-    <li> <a href="about.html">About</a> </li>
-    <li> <a href="biography.html">Biography</a> </li>
-  <!-- dropdown menu with selections for breakfast, lunch, and dinner menus-->
-    <li><a href="menupage.html"> Menu +</a> 
-            <ul class="dropdown"> 
-                <li> <a href="menupage.html#breakfast-menu"> Breakfast</a> </li>
-                <li> <a href="menupage.html#lunch-menu"> Lunch</a> </li>
-                <li> <a href="menupage.html#dinner-menu"> Dinner</a> </li>
-        </ul> 
-    </li>
-    <li> <a href="contactus.html" target="blank">Contact Us</a> </li>
-<!--call to action button for ordering-->
-    <div class="cta">
-    <li> <a href="order.html">Order Here!</a> </li>
-    </div>
-    </ul>
-</nav>
+                <div class="buttonBox">
+                    <button type="button" id="Next1"> Next </button>
+                </div>
 
-<form id="orderForm">
-    
-</form>
+            </form>
+<!--Second form -->
+            <form id="Form2">
+                <h3> Choose One Kind of Dish </h3>
+                <select name="food" id="food">
+                    <option value="breakfast1">Beef Tapsilog</option>
+                    <option value="breakfast2">Corned Beef Pandesal</option>
+                    <option value="breakfast3">Ube Waffles</option>
+                    <option value="lunch1">Tuna Sisig</option>
+                    <option value="lunch2">Mang Insasal Burger</option>
+                    <option value="lunch3">Fried Chicken Cutlets</option>
+                    <option value="dinner1">Pork Sisig</option>
+                    <option value="dinner2">Kare-Kare</option>
+                    <option value="dinner3">Sinigang Chicken Wings</option>
+                  </select><br><br>
+                  <label for="quantity">Quantity:</label>
+                  <input type="number" id="quantity" min="1" value="1">
+          
+                  <label for="price">Price per item:</label>
+                  <input type="number" id="price" min="0.01" step="0.01" value="10.00"><br>
+          
+                  <button type="button" onclick="calculateTotal()">Calculate Total</button><br><br>
+          
+                  <p id="total">Total: $0.00</p>
+                
+            
+                <div class="buttonBox">
+                    <button type="button" id="Back1"> Back </button>
+                    <button type="button" id="Next2"> Next </button>
+                </div>
 
-<!-- FOOTER -->
-<footer>
-    <div class="logoFooter"> 
-        <img src="../IMAGES/binkorialogo2 copy.png">
-    </div>
-    
-    <p> &copy; Binkoria at University of Houston --- All Rights Reserved.</p>
-    <p> 14000 University Blvd </p>
-    <p> Sugar Land, TX 77459</p>
-    </footer>
-</body>
+            </form>
+<!-- Third Form -->
+            <form id="Form3">
+                <h3> Personal Info </h3>
+                <input type="text" placeholder="First Name" required>
+                <input type="text" placeholder="Last Name" required>
+                <input type="text" placeholder="Mobile No." required>
+
+                <div class="buttonBox">
+                    <button type="button" id="Back2"> Back </button>
+                    <button type="Submit"> Submit </button>
+                </div>
+
+            </form>
+            <div class="step-row">
+                <div id="progress"></div>
+                <div class="step-col"><small> Step 1 </small></div>
+                <div class="step-col"><small> Step 2 </small></div>
+                <div class="step-col"><small> Step 3 </small></div>
+            </div>
+        </div>
+        <script src="../JavaScript/order.js"> </script>
+    </body>
 </html>
