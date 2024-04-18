@@ -53,3 +53,27 @@ function calculateTotal() {
     var total = quantity * price;
     document.getElementById("total").innerText = "Total: $" + total.toFixed(2);
 }
+
+
+// Add first name and last name validation before submitting
+const submitBtn = document.getElementById('submit-btn');
+
+const validate = (e) => {
+  e.preventDefault();
+  const fname = document.getElementById('fname');
+  const lname = document.getElementById('lname');
+  if (fname.value === "") {
+    alert("Please enter your First Name.");
+    fname.focus();
+    return false;
+  }
+  if (lname.value === "") {
+    alert("Please enter your Last Name.");
+    lname.focus();
+    return false;
+  }
+  
+  return true;
+}
+
+submitBtn.addEventListener('click', validate);
